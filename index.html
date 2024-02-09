@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Bar</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Side bar -->
+    <div class="sideBar">
+        
+        <span class="title">Min Verse</span>
+
+        <div class="links">
+            <a href="" class="link" ><i class="fa fa-dashboard"></i> Dashboard</a>
+            <a href="" class="link"><i class="fa fa-comments"></i> Messages</a>
+            <a href="" class="link" ><i class="fa fa-users"></i > Students</a>
+            <a href="" class="link"><i class="fa fa-question-circle"></i> About</a>
+        </div>
+        <p ><b style="color: rgb(28, 28, 84)">Accounts allowed</b></p>
+        <div class="links">
+            <a href="" class="link" ><i class="fa fa fa-phone"></i> contact</a>
+            <a href="" class="link" ><i class="fa fa fa-bank"></i> bank</a>
+            <a href="" class="link"><i class="fa fa fa-coins"></i> Messages</a>
+            <p ><b style="color: rgb(28, 28, 84)">Management</b></p>
+            <a href="" class="link"><i class="fa fa-gear"></i> Settings</a>
+            <a href="" class="link active" ><i class="fa fa-sign-out"></i > Log out</a>
+            
+        </div>
+    </div>
+    <div class="main">
+        
+        <h3 ><i onclick="menu()" class="fa fa-bars icon"></i> Hi,welcome to my Dashboard</h3>
+        </div>
+    <script>
+        function menu(){
+            
+            var menu = document.querySelector('.sideBar');
+            if(menu.style.display == 'block'){
+                menu.style.display = 'none';
+                
+            }else{
+                menu.style.display = 'block';
+                
+                
+            }
+           
+        }
+
+    </script>
+</body>
+</html>
